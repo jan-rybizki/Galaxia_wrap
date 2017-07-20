@@ -1,6 +1,7 @@
 # Galaxia_wrap
 
-A few python scripts and a tutorial notebook to create and manipulate Galaxia mock catalogues
+A few python scripts and a tutorial notebook to create and manipulate Galaxia mock catalogues.
+These scripts will only run in python 2 because of the ebfpy requirement.
 
 
 **What is Galaxia**
