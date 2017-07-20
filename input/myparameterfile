@@ -1,5 +1,5 @@
 outputFile                          TGAS_11Vmag
-outputDir                           ../output/
+outputDir                           ./../output
 photoSys                            UBV
 magcolorNames                       V,B-V
 appMagLimits[0]                     -1000
