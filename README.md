@@ -23,8 +23,8 @@ galaxia -s warp
 ```
 which will run for some time.
 
-**Start with the tutorial**
+**Start with the notebook**
 
-Now you can dive into the tutorials which will show you (a) how to create a magnitude limited catalogue and (b) how to input your n-body data to create mock observations.
+Now you can dive into the notebook which will show you (a) how to create a magnitude limited catalogue and (b) how to input your n-body data to create mock observations (not finished yet).
 
-This tutorial was setup for the Gaia Sprint 2017 [http://gaia.lol/].
+This repository was setup for the Gaia Sprint 2017 [http://gaia.lol/].
