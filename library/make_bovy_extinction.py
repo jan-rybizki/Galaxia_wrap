@@ -1,12 +1,12 @@
 import numpy as np
-import mwdust
-from healpy import ang2pix
-
-
 
 def apply_bovy_extinction(data):
-	## This makes the bovy2015 map extinction.
+	import mwdust
+	from healpy import ang2pix	
+	## This updates the Galaxia extinction to the bovy2015 extinction.
 	## the resolution is given in the next line (healpix in factors of 2) 128 takes approximately 3hours 256 takes approximately 13hours
+	## The extinction is averaged over healpix pixel to make use of arrays, otherwise each star needs to be calculated individually.
+	## Still the distance information of the extinction map is used.
 		
 	healpix_resolution = 128
 	print(len(data))	
@@ -30,8 +30,9 @@ def apply_bovy_extinction(data):
 			print i, len(index_list)
 		data['exbv_schlegel'][index_list[i]:index_list[i+1]] = dust(np.median(data['glon'][index_list[i]:index_list[i+1]]),np.median(data['glat'][index_list[i]:index_list[i+1]]),data['rad'][index_list[i]:index_list[i+1]])
 
-	print('median extinction: ',np.median(data['exbv_schlegel']))
+	print(np.median(data['exbv_schlegel']))
 		
 	return(data)
+
 
 
