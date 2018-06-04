@@ -28,3 +28,5 @@ which will run for some time.
 Now you can dive into the notebook which will show you (a) how to create a magnitude limited catalogue and (b) how to input your n-body data to create mock observations (not finished yet).
 
 This repository was setup for the Gaia Sprint 2017 [http://gaia.lol/].
+
+In the meanwhile we have produced a mock GDR2 catalogue based on Galaxia: [http://adsabs.harvard.edu/abs/2018PASP..130g4101R] 
