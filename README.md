@@ -1,6 +1,6 @@
 # Galaxia_wrap
 
-A few python scripts and a tutorial notebook to create and manipulate Galaxia mock catalogues.
+A few python scripts and tutorial notebooks to create and manipulate Galaxia mock catalogues.
 These scripts will only run in python 2 because of the ebfpy requirement.
 
 
@@ -25,7 +25,7 @@ which will run for some time.
 
 **Start with the notebook**
 
-Now you can dive into the notebook which will show you (a) how to create a magnitude limited catalogue and (b) how to input your n-body data to create mock observations (not finished yet).
+Now you can dive into the notebook which will show you (a) how to create a magnitude limited catalogue and (b) how to input your n-body data to create mock observations. As an application for (b) we create a CMD from many SSP's using a flat SFR and look at the age distribution of RGB stars. This can be extended to any stellar tracer population and is useful top produce mock data, e.g. from Chempy abundance tracks [https://github.com/jan-rybizki/Chempy/blob/master/tutorials/5-Chempy_function_and_stellar_tracer_sampling.ipynb]. This age sampling has been explained here [http://adsabs.harvard.edu/abs/2016AN....337..880J]
 
 This repository was setup for the Gaia Sprint 2017 [http://gaia.lol/].
 
