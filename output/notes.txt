@@ -1,0 +1,15 @@
+runtime issues: 0.0025 sampling takes about 42minutes
+		0.001 sampling takes about 17minutes
+		0.00025 sampling takes about 7minutes
+
+0.001 sampling and 0.0025 sampling take equivalent times. higher sampling will probably take longer.
+
+Reference cat means: GDR3Isochrones, old Galaxia, WarpFlarOn, New Extinction map nside 512,
+
+extinction grid test: For lower extinction grid nside the resolution is too coarse and the likelihood with GDR2 is bad but saturates fast, at least for 0.001 sampling. Might be different for higher sampling
+
+seed_test: The noise on the likelihood for catalogue realisations is high at 0.001sampling. Need to reassess with higher sampling.
+
+warp test: No warp seems to fit better the galaxy. Test with other warp parameters.
+
+New Galaxia parameter file: Looks worse. Will try to update the old one.

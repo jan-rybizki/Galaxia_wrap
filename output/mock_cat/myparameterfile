@@ -1,7 +1,9 @@
 outputFile                          flat_sfr_selection_down_to_5
+modelFile       Model/population_parameters_BGM_update.ebf
+codeDataDir              /home/rybizki/Programme/GalaxiaData
 outputDir                           ../output/mock_cat
-photoSys                            UBV
-magcolorNames                       V,B-V
+photoSys                            parsec1/GAIADR3
+magcolorNames                       gaia_g,gaia_bpft-gaia_rp
 appMagLimits[0]                     -100
 appMagLimits[1]                     1000
 absMagLimits[0]                     -100.000000

@@ -1,0 +1,71 @@
+## Local normalisation, compare to Czekaj+14 table 7 ##
+popid= 0  2.9 Msun/pc^3*10^-3
+popid= 1  7.6 Msun/pc^3*10^-3
+popid= 2  5.3 Msun/pc^3*10^-3
+popid= 3  3.8 Msun/pc^3*10^-3
+popid= 4  5.7 Msun/pc^3*10^-3
+popid= 5  4.6 Msun/pc^3*10^-3
+popid= 6  5.0 Msun/pc^3*10^-3
+thick disc  1.2 Msun/pc^3*10^-3
+halo  10.2 Msun/pc^3*10^-6
+############################################
+GDR2mock
+nstar before cleaning: 1606747
+nstar after g-band cleaning: 1271604
+nstar before cleaning: 1271604
+nstar after rp-band cleaning: 938411
+938411
+after smc cut: 938056
+after lmc cut: 936170
+GDR2
+nstar before cleaning: 1253908
+nstar after g-band cleaning: 1105874
+nstar before cleaning: 1105874
+nstar after rp-band cleaning: 930348
+930348
+after smc cut: 928930
+after lmc cut: 919432
+hpx 2055 is empty
+hpx 2064 is empty
+hpx 2065 is empty
+hpx 2066 is empty
+hpx 2067 is empty
+hpx 2068 is empty
+hpx 2069 is empty
+hpx 2070 is empty
+hpx 2071 is empty
+hpx 2072 is empty
+hpx 2073 is empty
+hpx 2080 is empty
+hpx 2081 is empty
+hpx 2082 is empty
+hpx 2088 is empty
+hpx 2112 is empty
+hpx 2336 is empty
+hpx 2338 is empty
+hpx 2344 is empty
+hpx 2346 is empty
+cumhpx 3108 is deleted in the model because of no representation in the data, (might affect likelihood)
+likelihood:  -269711.52422488376
+hpx 2055 is empty
+hpx 2064 is empty
+hpx 2065 is empty
+hpx 2066 is empty
+hpx 2067 is empty
+hpx 2068 is empty
+hpx 2069 is empty
+hpx 2070 is empty
+hpx 2071 is empty
+hpx 2072 is empty
+hpx 2073 is empty
+hpx 2080 is empty
+hpx 2081 is empty
+hpx 2082 is empty
+hpx 2088 is empty
+hpx 2112 is empty
+hpx 2336 is empty
+hpx 2338 is empty
+hpx 2344 is empty
+hpx 2346 is empty
+936170 919432
+

@@ -1,7 +1,9 @@
 outputFile                          TGAS_11Vmag
+modelFile                           Model/population_parameters_mrtd5.ebf
+codeDataDir                         /home/rybizki/Programme/GalaxiaData
 outputDir                           ./../output
-photoSys                            UBV
-magcolorNames                       V,B-V
+photoSys                            parsec1/GAIADR2_TMASS
+magcolorNames                       gaia_g,gaia_gbp-gaia_grp
 appMagLimits[0]                     -1000
 appMagLimits[1]                     11
 absMagLimits[0]                     -1000
@@ -12,7 +14,7 @@ geometryOption                      0
 longitude                           0
 latitude                            90
 surveyArea                          1000
-fSample                             0.1
+fSample                             0.001
 popID                               -1
 warpFlareOn                         1
 seed                                1
