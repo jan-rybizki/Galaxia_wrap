@@ -31,4 +31,4 @@ This repository was setup for the Gaia Sprint 2017 [http://gaia.lol/].
 
 In the meanwhile we have produced a mock GDR2 catalogue based on Galaxia: [http://adsabs.harvard.edu/abs/2018PASP..130g4101R] 
 
-If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract it]
+If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]
