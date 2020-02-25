@@ -33,5 +33,5 @@ In the meanwhile we have produced a mock GDR2 catalogue based on Galaxia: [http:
 
 If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]
 
-** GeDR3mock **
+**GeDR3mock**
 Galaxia version that can be used in interplay with the new repository can be found here [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/]
