@@ -34,6 +34,13 @@ In the meanwhile we have produced a mock GDR2 catalogue based on Galaxia: [http:
 If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]
 
 **GeDR3mock**
+
 Galaxia version that can be used in interplay with the new repository can be found here [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/].
 
 Mock cluster parameters can be inspected here [https://keeper.mpdl.mpg.de/d/822727acc95c4999bec0/].
+
+Raw isochrones data can be found here [https://keeper.mpdl.mpg.de/d/89df3ade0aed48c2b4ac/].
+
+Reduced isochrones can be found here [https://keeper.mpdl.mpg.de/d/cde7cad3a3994cc8998b/].
+
+Extinction data cube can be found here [https://keeper.mpdl.mpg.de/d/a1e5bfdfacc94940ace1/]
