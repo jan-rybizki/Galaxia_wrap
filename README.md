@@ -24,6 +24,8 @@ which will run for some time.
 
 ***Legacy: GDR2mock***
 
+------------------------------------------------------------------------------------
+
 **Start with the notebook**
 
 Now you can dive into the notebook which will show you (a) how to create a magnitude limited catalogue and (b) how to input your n-body data to create mock observations. As an application for (b) we create a CMD from many SSP's using a flat SFR and look at the age distribution of RGB stars. This can be extended to any stellar tracer population and is useful top produce mock data, e.g. from Chempy abundance tracks [https://github.com/jan-rybizki/Chempy/blob/master/tutorials/5-Chempy_function_and_stellar_tracer_sampling.ipynb]. This age sampling has been explained here [http://adsabs.harvard.edu/abs/2016AN....337..880J]
@@ -34,9 +36,15 @@ In the meanwhile we have produced a mock GDR2 catalogue based on Galaxia: [http:
 
 If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]
 
+------------------------------------------------------------------------------------
+
 ***GeDR3mock***
 
+
 **Resources**
+
+The following files might prove useful if you want to reproduce what we have done in order to produce GeDR3mock [http://dc.g-vo.org/browse/gedr3mock/q].
+
 Galaxia version that can be used in interplay with the new repository can be found here [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/].
 
 Mock cluster parameters can be inspected here [https://keeper.mpdl.mpg.de/d/822727acc95c4999bec0/].
