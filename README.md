@@ -1,7 +1,6 @@
 # Galaxia_wrap
 
 A few python scripts and tutorial notebooks to create and manipulate Galaxia mock catalogues.
-These scripts will only run in python 2 because of the ebfpy requirement.
 
 
 **What is Galaxia**
@@ -10,7 +9,7 @@ Galaxia is a software to create mock stellar catalogues [http://adsabs.harvard.e
 
 **Prerequisits**
 
-Download Galaxia [https://sourceforge.net/projects/galaxia/files/] and follow the instructions [http://galaxia.sourceforge.net/Galaxia3pub.html]. You will also have to install ebf into your python distribution via
+Download Galaxia [https://sourceforge.net/projects/galaxia/files/] (for GeDR3mock an updated Galaxia version can be downloaded from [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/]) and follow the instructions [http://galaxia.sourceforge.net/Galaxia3pub.html]. You will also have to install ebf into your python distribution via
 
 ```
 pip install ebfpy
