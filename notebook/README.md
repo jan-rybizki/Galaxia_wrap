@@ -17,7 +17,7 @@ In **notebook 1** we will use Galaxia to produce a magnitude limited survey of t
 
 **Notebook 3** Can be used to create a likelihood function based on CMDs per HEALpix.
 
-**Notebook 4** Shows the different functionalities of the wrapper function that creates magnitude limited all-sky surveys.
+**[Notebook 4](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/%5B4%5Dmag_limited_survey_function.ipynb)** Shows the different functionalities of the wrapper function that creates magnitude limited all-sky surveys.
 
 **Notebook 5(a)** Galactic parameter search using Galaxia as a forward model (notebook 4) together with different likelihoods (notebook 3)
 
