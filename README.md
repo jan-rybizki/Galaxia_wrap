@@ -40,6 +40,8 @@ If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl
 
 ***GeDR3mock***
 
+New [notebooks](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook) were added in order to be able to reproduce or adapt GeDR3mock results.
+
 
 **Resources**
 
@@ -56,3 +58,9 @@ Reduced isochrones can be found here [https://keeper.mpdl.mpg.de/d/cde7cad3a3994
 Extinction data cube can be found here [https://keeper.mpdl.mpg.de/d/a1e5bfdfacc94940ace1/].
 
 Visibility query for contras sensitivity and reduction routine can be found here [https://keeper.mpdl.mpg.de/d/02a3333d01a34e99a8f5/].
+
+**Referencing**
+
+Please cite our [GeDR3mock paper](https://arxiv.org/abs/2004.09991) if you are using GeDR3mock results.
+
+If you are only using the tools in this repository, please cite this [ASCL]([https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]).
