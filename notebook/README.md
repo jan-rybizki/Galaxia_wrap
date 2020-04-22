@@ -30,3 +30,5 @@ In **[notebook 1](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebo
 **[isochrone_generation](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook/isochrone_generation)** Here the conversion and filtering of the raw stellar evolutionary tracks to the final isochrone tables can be inspected.
 
 **[notebook_sweep](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook/notebook_sweep)** shows the final compilation of GeDR3mock for upload to the Virtual Observatory
+
+**[notebook_aida](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook/notebook_aida)** is similar to the notebooks here but also includes a notebook which computes the new 3d extinction map used when generating GeDR3mock.
