@@ -49,7 +49,7 @@ The following files might prove useful if you want to reproduce what we have don
 
 Galaxia version that can be used in interplay with the new repository can be found here [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/].
 
-I have hard-coded the line for the Besancon model file in 'galaxia.cpp'. You will have to change that by hand to the place where you put the Galaxia data.
+I have hard-coded the line for the Besancon model file in 'galaxia.cpp'. You will have to change that by hand to the place where you put the Galaxia data and then recompile.
 
 Mock cluster parameters can be inspected here [https://keeper.mpdl.mpg.de/d/822727acc95c4999bec0/].
 
