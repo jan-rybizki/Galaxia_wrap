@@ -64,3 +64,7 @@ Visibility query for contras sensitivity and reduction routine can be found here
 Please cite our [GeDR3mock paper](https://arxiv.org/abs/2004.09991) if you are using GeDR3mock results.
 
 If you are only using the tools in this repository, please cite this [ASCL]([https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]).
+
+**GeDR3mock presentation**
+
+Here is a [presentation](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/GC_rybizki.pdf) of the GeDR3mock that I have given at MPIA. I am happy to give that talk again upon request and answer all your questions to the software/catalog.
