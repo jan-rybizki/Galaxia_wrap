@@ -47,7 +47,7 @@ New [notebooks](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook
 
 The following files might prove useful if you want to reproduce what we have done in order to produce GeDR3mock [http://dc.g-vo.org/browse/gedr3mock/q].
 
-Galaxia version that can be used in interplay with the new repository can be found here [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/].
+Galaxia version that can be used in interplay with the new repository can be found here [https://keeper.mpdl.mpg.de/f/718161356a6e461ca412/]. I have hard-coded the line for the Besancon model file in 'galaxia.cpp' (line 410 and 411). You will have to change that by hand to the place where you put the Galaxia data and then recompile. Please also make sure to use the GeDR3mock version of the model file ('population_parameters_BGM_update.ebf' in the source_folder from above contains wrong parameters) which you can find here [https://keeper.mpdl.mpg.de/f/7543a05d7bb446efab4f/].
 
 Mock cluster parameters can be inspected here [https://keeper.mpdl.mpg.de/d/822727acc95c4999bec0/].
 
@@ -64,3 +64,7 @@ Visibility query for contras sensitivity and reduction routine can be found here
 Please cite our [GeDR3mock paper](https://arxiv.org/abs/2004.09991) if you are using GeDR3mock results.
 
 If you are only using the tools in this repository, please cite this [ASCL]([https://ui.adsabs.harvard.edu/abs/2019ascl.soft01005R/abstract]).
+
+**GeDR3mock presentation**
+
+Here is a [presentation](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/GC_rybizki.pdf) of the GeDR3mock that I have given at MPIA. I am happy to give that talk again upon request and answer all your questions to the software/catalog.
