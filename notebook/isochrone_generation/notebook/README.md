@@ -16,3 +16,6 @@ You can also just have a look at them here on github.
 **[Notebook 3new](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/isochrone_generation/notebook/%5B3new%5Dinspect_parsec_index.ipynb)** evaluates and checks the resulting grid.
 
 **[Notebook 4](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/isochrone_generation/notebook/%5B4%5Dcreate%20parsec_and_ext_for_upload.ipynb)** prepares the isochrone grid for upload to Virtual Observatory.
+
+
+**[Notebook 5](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/isochrone_generation/notebook/%5B5%5Dgenerate%20ebf%20isochrones%20for%20galaxia.ipynb)** Converting the numpy grid into obf file for Galaxia to read in.
