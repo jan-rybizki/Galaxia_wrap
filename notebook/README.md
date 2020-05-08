@@ -27,6 +27,9 @@ In **[notebook 1](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebo
 
 **[Notebook 8](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/%5B8%5DTrain%20parallax%20and%20proper%20motion%20error_alternative_projection.ipynb)([a](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/%5B8a%5DCalculate%20the%20error%20relations.ipynb))** Empirical training of the parallax uncertainty and relations for proper motion error. 
 
+**[extinction map cube generation](https://github.com/jan-rybizki/Galaxia_wrap/blob/master/notebook/Combined_extinction_map_for_GDR3mock.ipynb)** Generation of the 3d extinction cube that is used to add dust reddening. Other maps can in principle be used, that are compatible with mwdust or dustmaps. 
+
+
 **[isochrone_generation](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook/isochrone_generation)** Here the conversion and filtering of the raw stellar evolutionary tracks to the final isochrone tables can be inspected.
 
 **[notebook_sweep](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook/notebook_sweep)** shows the final compilation of GeDR3mock for upload to the Virtual Observatory
