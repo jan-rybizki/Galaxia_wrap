@@ -42,6 +42,8 @@ If you use this software please cite [https://ui.adsabs.harvard.edu/abs/2019ascl
 
 New [notebooks](https://github.com/jan-rybizki/Galaxia_wrap/tree/master/notebook) were added in order to be able to reproduce or adapt GeDR3mock results.
 
+It was all tested on a linux system with python 3. If you experience problems feel free to contact me.
+
 
 **Resources**
 
