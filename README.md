@@ -57,6 +57,8 @@ Raw isochrones data can be found here [https://keeper.mpdl.mpg.de/d/89df3ade0aed
 
 Reduced isochrones can be found here [https://keeper.mpdl.mpg.de/d/cde7cad3a3994cc8998b/].
 
+Isochrone arrays and extinction arrays that can be used for parsec indexing and extinction curve application can be found here [https://keeper.mpdl.mpg.de/d/44cee7ccbe5d4706b526/]. 
+
 Extinction data cube can be found here [https://keeper.mpdl.mpg.de/d/a1e5bfdfacc94940ace1/].
 
 Visibility query for contras sensitivity and reduction routine can be found here [https://keeper.mpdl.mpg.de/d/02a3333d01a34e99a8f5/].
