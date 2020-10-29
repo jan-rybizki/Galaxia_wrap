@@ -5,9 +5,47 @@ from astropy.coordinates import SkyCoord
 from astropy import units as u
 from numpy.lib.recfunctions import append_fields
 
+
+
+def apply_extinction_curves(data,indexing,ext_curve,band):
+    """
+    this function converts A0 to extinction in specific bands.
+    INPUT
+       data = Galaxia catalog data
+       indexing = a mapping from the parsec_index of each source in the catalogue onto the isochrone/extinction grid
+       ext_curve = an array of the form [parsec_index,photometric_band,extinction_grid] that has been prepared from isochrones beforehand
+       band = name of the photometric band
+    OUTPUT
+       ext_array = the absorption in the specified band according to the a0 provided in data
+    """
+    from scipy.interpolate import interp1d    
+    # These bands correpond to the ones trained on and to the bands in the galaxia catalog
+    bands = ['g','bpft','bpbr','rp','rvs']
+    for i, item in enumerate(bands):
+        if item == band:
+            break
+    # ext_curve is projected onto that band only
+    ext_curve = ext_curve[:,i,:]
+    avs = [0,1,2,3,5,10,20]
+    # prepend zeros and bring onto the data shape
+    ext_curve = np.concatenate((np.zeros(shape=(len(ext_curve[indexing])),dtype = np.float32)[:,None],ext_curve[indexing][:,:]), axis=1)
+    # interpolate the ext_curve cubically onto a finer grid
+    x_axis = np.linspace(0,20,41)
+    f = interp1d(avs,ext_curve, kind = 'cubic', copy = False, bounds_error=False, fill_value='extrapolate', assume_sorted = True)
+    result = f(x_axis)
+    # for each star linearly interpolate the av value from the finer grid
+    ext_array = np.zeros(shape = (len(data)),dtype = np.float32)
+    for i,item in enumerate(result):
+        ext_array[i] = np.interp(data[i]['a0'],x_axis,result[i], left = 0.)
+    # if av > 20 then extrapolate linearly
+    cut = (data['a0']>20)
+    ext_array[cut] = ext_array[cut] * (data['a0'][cut]/20.)
+    return(ext_array)
+
 # define a function that returns the ext in a band from model, av, and linear or quadratic fitting,
 def av2ext(band_name,log_teff,log_grav,meh_ini,log_lum,av, av_axis = np.array([0,1,2,3,5,10,20])):
     """
+    NOT RECOMMENDED, BECAUSE NON DETERMINISTIC
     get extinctions for a specific band for an array of Av,and stellar parameters
     INPUT
        band_name = specific band (this will load a pre-trained extinction model)
@@ -43,41 +81,6 @@ def av2ext(band_name,log_teff,log_grav,meh_ini,log_lum,av, av_axis = np.array([0
     # if av > 20 then extrapolate linearly
     cut = (av>20)
     ext_array[cut] = ext_array[cut] * (av[cut]/20.)
-    return(ext_array)
-
-def apply_extinction_curves(data,indexing,ext_curve,band):
-    """
-    this function converts A0 to extinction in specific bands.
-    INPUT
-       data = Galaxia catalog data
-       indexing = a mapping from the parsec_index of each source in the catalogue onto the isochrone/extinction grid
-       ext_curve = an array of the form [parsec_index,photometric_band,extinction_grid] that has been prepared from isochrones beforehand
-       band = name of the photometric band
-    OUTPUT
-       ext_array = the absorption in the specified band according to the a0 provided in data
-    """
-    from scipy.interpolate import interp1d    
-    # These bands correpond to the ones trained on and to the bands in the galaxia catalog
-    bands = ['g','bpft','bpbr','rp','rvs']
-    for i, item in enumerate(bands):
-        if item == band:
-            break
-    # ext_curve is projected onto that band only
-    ext_curve = ext_curve[:,i,:]
-    avs = [0,1,2,3,5,10,20]
-    # prepend zeros and bring onto the data shape
-    ext_curve = np.concatenate((np.zeros(shape=(len(ext_curve[indexing])),dtype = np.float32)[:,None],ext_curve[indexing][:,:]), axis=1)
-    # interpolate the ext_curve cubically onto a finer grid
-    x_axis = np.linspace(0,20,41)
-    f = interp1d(avs,ext_curve, kind = 'cubic', copy = False, bounds_error=False, fill_value='extrapolate', assume_sorted = True)
-    result = f(x_axis)
-    # for each star linearly interpolate the av value from the finer grid
-    ext_array = np.zeros(shape = (len(data)),dtype = np.float32)
-    for i,item in enumerate(result):
-        ext_array[i] = np.interp(data[i]['a0'],x_axis,result[i], left = 0.)
-    # if av > 20 then extrapolate linearly
-    cut = (data['a0']>20)
-    ext_array[cut] = ext_array[cut] * (data['a0'][cut]/20.)
     return(ext_array)
 
 
